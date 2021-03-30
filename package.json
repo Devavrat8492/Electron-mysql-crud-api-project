@@ -1,0 +1,46 @@
+{
+  "name": "electron-mysql-crud",
+  "productName": "Electron MySQL CRUD",
+  "version": "1.0.0",
+  "description": "My Electron SQL full CRUD desktop application",
+  "main": "src/index.js",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/Devavrat8492/Electron-crud-project.git"
+  },
+  "scripts": {
+    "start": "electron .",
+    "dist": "build",
+    "build-installer": "electron-builder",
+    "build": "electron-builder build --win --publish never",
+    "deploy": "electron-builder build --win --publish always"
+  },
+  "build": {
+    "appId": "Electron_sql_app",
+    "win": {
+      "target": "nsis",
+      "icon": "build/icon.ico"
+    },
+    "nsis": {
+      "installerIcon": "build/icon.ico",
+      "uninstallerIcon": "build/icon.ico",
+      "uninstallDisplayName": "Electron SQL CRUD app",
+      "license": "license.txt",
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron-reload": "^1.5.0",
+    "electron-updater": "^4.3.8",
+    "promise-mysql": "^5.0.3",
+    "update-electron-app": "^2.0.1"
+  },
+  "devDependencies": {
+    "electron": "^12.0.2",
+    "electron-builder": "^22.10.5"
+  }
+}
