@@ -6,7 +6,7 @@
   "main": "src/index.js",
   "repository": {
     "type" : "git",
-    "url" : "https://github.com/Devavrat8492/Electron-crud-project.git"
+    "url" : "https://github.com/Devavrat8492/Electron-mysql-crud-api-project.git"
   },
   "scripts": {
     "start": "electron .",
